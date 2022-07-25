@@ -97,6 +97,7 @@ url, filename = ("https://github.com/pytorch/hub/raw/master/images/dog.jpg", "do
 urllib.request.urlretrieve(url, filename)
 img = Image.open(filename).convert('RGB')
 tensor = transform(img).unsqueeze(0) # transform and add batch dimension 
+test
 ```
 
 ## 3.预测
